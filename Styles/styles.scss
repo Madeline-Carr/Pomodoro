@@ -175,6 +175,25 @@ button{
   }
   .wrapper{
     width: 95%;
-    margin: 0;
+    margin: 0 auto;
   }
 }
+
+@media(max-width: 600px){
+  .buttons {
+    display: block;
+    background-color: $darkRed;
+  }
+  button{
+    min-width: 200px;
+  }
+  h3{
+    background-color: white;
+    border-radius: 20px;
+    width: 100%;
+  }
+  .ron{
+    width: 100%;
+    box-sizing: border-box;
+  }
+  }

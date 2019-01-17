@@ -164,4 +164,19 @@ button {
     visibility: hidden; }
   .wrapper {
     width: 95%;
-    margin: 0; } }
+    margin: 0 auto; } }
+
+@media (max-width: 600px) {
+  .buttons {
+    display: block;
+    background-color: #F73F3F; }
+  button {
+    min-width: 200px; }
+  h3 {
+    background-color: white;
+    border-radius: 20px;
+    width: 100%; }
+  .ron {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; } }
