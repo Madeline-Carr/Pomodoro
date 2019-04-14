@@ -1,73 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>POMODORO</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="shortcut icon" href="Images/icon-01.png" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>POMODORO</title>
-  <link rel="stylesheet" href="/css/styles.css">
-  <link rel="shortcut icon" href="Images/icon-01.png">
-</head>
-
-<body>
-
-  <img src="Images/Top.svg" alt="" class="top">
-  <h1><a href="#" class="logo">POMODORO</a></h1>
-  <div class="bubbles">
-    <img src="Images/leftDown.svg" alt="" id="leftDown">
-    <img src="Images/redCir.svg" alt="" id="redCir">
-    <img src="Images/topRight.svg" alt="" id="topRight">
-  </div>
-  <div class="wrapper">
-    <!-- TIME TIME TIME-->
-    <h1 class="time">25:00</h1>
-  </div>
-  <img src="Images/White.svg" alt="" class="middle">
-  <div class="wrapper">
-    <h2>Press start to be more productive!</h2>
-
+  <body>
+    <img src="Images/Top.svg" alt="" class="top" />
+    <h1><a href="#" class="logo">POMODORO</a></h1>
+    <div class="bubbles">
+      <img src="Images/leftDown.svg" alt="" id="leftDown" />
+      <img src="Images/redCir.svg" alt="" id="redCir" />
+      <img src="Images/topRight.svg" alt="" id="topRight" />
+    </div>
+    <div class="wrapper">
+      <!-- TIME TIME TIME-->
+      <h1 class="time">25:00</h1>
+    </div>
+    <img src="Images/White.svg" alt="" class="middle" />
+    <div class="wrapper">
+      <h2>Press start to be more productive!</h2>
+    </div>
     <!-- BUTTONS -->
     <div class="buttons">
       <button type="button" name="button" onclick="startTime()">Start</button>
       <button type="button" name="button">Stop</button>
       <button type="button" name="button" class="break">Break</button>
     </div>
+    <div class="wrapper">
+      <h3>What is a pomodoro?</h3>
 
+      <div class="ron">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id nisl
+          in turpis placerat pellentesque nec sit amet lorem. Vestibulum ante
+          ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+          Curae; Duis ac odio quis tellus rutrum placerat. Integer finibus quam
+          eget feugiat commodo. Mauris suscipit ipsum eu mauris eleifend
+          facilisis. Suspendisse sed tellus posuere, ornare purus id, fringilla
+          ante. Nunc ut magna eget odio feugiat elementum. Nunc a quam accumsan,
+          porta nisi a, dignissim tellus. Maecenas imperdiet ante sed est
+          euismod ultrices.
+        </p>
+        <p>Paragraph Tag...</p>
+        <p>
+          In aliquam id augue in iaculis. Curabitur et dui eu magna volutpat
+          rhoncus. Vivamus sit amet libero ante. Morbi vitae justo in ante
+          porttitor lacinia. Aliquam viverra, est at egestas pharetra, est
+          tellus pharetra orci, in fringilla odio nisi luctus nisi. Morbi
+          imperdiet lectus sed mauris pulvinar, eget feugiat massa imperdiet.
+          Phasellus diam lorem, laoreet eu volutpat id, ornare ac felis.
+        </p>
+        <p>
+          Sed ut tortor porttitor, convallis risus et, euismod lectus. Morbi
+          orci tellus, iaculis et vestibulum eget, blandit id dui. Ut nulla
+          ligula, dignissim et molestie in, tincidunt pharetra turpis. Integer
+          commodo dictum gravida. Praesent id cursus metus. Proin vehicula at
+          dolor tempus interdum. Vivamus efficitur dolor vel nisi porttitor,
+          quis fringilla tortor commodo. Nunc interdum tortor sit amet
+          sollicitudin efficitur. Ut ultrices sodales imperdiet. Etiam id risus
+          a enim molestie vehicula. Interdum et malesuada fames ac ante ipsum
+          primis in faucibus.
+        </p>
+      </div>
 
-    <h3>What is a pomodoro?</h3>
-
-
-    <div class="ron">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id nisl in turpis placerat pellentesque nec sit
-        amet lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis ac
-        odio quis tellus rutrum placerat. Integer finibus quam eget feugiat commodo. Mauris suscipit ipsum eu mauris
-        eleifend facilisis. Suspendisse sed tellus posuere, ornare purus id, fringilla ante. Nunc ut magna eget odio
-        feugiat elementum. Nunc a quam accumsan, porta nisi a, dignissim tellus. Maecenas imperdiet ante sed est
-        euismod ultrices.</p>
-      <p>Paragraph Tag... </p>
-      <p>In aliquam id augue in iaculis. Curabitur et dui eu magna volutpat rhoncus. Vivamus sit amet libero ante.
-        Morbi vitae justo in ante porttitor lacinia. Aliquam viverra, est at egestas pharetra, est tellus pharetra
-        orci, in fringilla odio nisi luctus nisi. Morbi imperdiet lectus sed mauris pulvinar, eget feugiat massa
-        imperdiet. Phasellus diam lorem, laoreet eu volutpat id, ornare ac felis.</p>
-      <p>Sed ut tortor porttitor, convallis risus et, euismod lectus. Morbi orci tellus, iaculis et vestibulum eget,
-        blandit id dui. Ut nulla ligula, dignissim et molestie in, tincidunt pharetra turpis. Integer commodo dictum
-        gravida. Praesent id cursus metus. Proin vehicula at dolor tempus interdum. Vivamus efficitur dolor vel nisi
-        porttitor, quis fringilla tortor commodo. Nunc interdum tortor sit amet sollicitudin efficitur. Ut ultrices
-        sodales imperdiet. Etiam id risus a enim molestie vehicula. Interdum et malesuada fames ac ante ipsum primis in
-        faucibus.</p>
+      <div class="end">
+        <h1 class="david">POMODORO</h1>
+        <p>About Us</p>
+        <br />
+        <p>Contact</p>
+        <br />
+        <p>Mission</p>
+        <br />
+      </div>
     </div>
 
-    <div class="end">
-      <h1 class="david">POMODORO</h1>
-      <p>About Us</p> <br>
-      <p>Contact</p> <br>
-      <p>Mission</p> <br>
-    </div>
-  </div>
-
-  <!-- JAVASCRIPT LINK -->
-  <script src="Script/main.js" charset="utf-8"></script>
-</body>
-
+    <!-- JAVASCRIPT LINK -->
+    <script src="Script/main.js" charset="utf-8"></script>
+  </body>
 </html>

@@ -1,15 +1,17 @@
-//VARIABLES
-console.log("Hello Maddie!");
 
-//BUTTON FUNCTIONS
-function startTime(){
-  document.getElementsByClassName("time").innerHTML = "Paragraph changed!";
-};
+//Adds 25 min to time
+function addTime(min) {
+    let now = new Date();
+    console.log(now);
+    let endTime = now.setMinutes(now.getMinutes() + min);
+    console.log(now);
+    let timeToGo = endTime - now;
+    console.log(timeToGo);
+}
 
-function stopTime(){
+function startTime() {
+    addTime(25);
 
-};
+}
 
-function breakTime(){
-
-};
+startTime();
