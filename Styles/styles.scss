@@ -1,8 +1,8 @@
 //  sass --watch Styles/styles.scss:Styles/styles.css
 
-@import"colors";
+@import "colors";
 
-html{
+html {
   background-color: $darkRed;
   background-image: linear-gradient($lightRed, $darkRed);
   height: 100%;
@@ -10,7 +10,7 @@ html{
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: HelveticaNeue;
   margin: 0px;
 }
@@ -20,14 +20,14 @@ h1 {
   margin: 0px;
   margin-left: 10%;
 }
-.logo{
+.logo {
   position: fixed;
   z-index: 100;
   font-size: 3rem;
   padding-top: 40px;
 }
 
-.time{
+.time {
   margin: 0 auto;
   text-align: center;
   color: $lightpink;
@@ -38,15 +38,15 @@ a {
   text-decoration: none;
   color: $darkRed;
 }
-a:hover{
+a:hover {
   color: $lightRed;
 }
-.wrapper{
-  width:60%;
+.wrapper {
+  width: 60%;
   margin: 0 auto;
 }
 
-button{
+button {
   background-color: white;
   color: $darkRed;
   border-radius: 50px;
@@ -59,34 +59,36 @@ button{
   margin-bottom: 0px;
   line-height: 25px;
 }
-button:hover{
+button:hover {
   color: white;
   background-image: linear-gradient($lightRed, $darkRed);
 }
-button:focus {outline:0;}
+button:focus {
+  outline: 0;
+}
 
-h2{
-  color:white;
+h2 {
+  color: white;
   text-align: center;
 }
-h3{
-  color:$darkRed;
+h3 {
+  color: $darkRed;
   font-size: 3rem;
   margin-top: 32%;
   text-align: center;
   margin-bottom: 10px;
 }
 
-p{
+p {
   color: $lightRed;
 }
-.top{
+.top {
   width: 50%;
   z-index: 99;
   position: fixed;
   min-width: 500px;
 }
-.middle{
+.middle {
   width: 100%;
   position: absolute;
   z-index: -1;
@@ -94,14 +96,14 @@ p{
   margin-top: 8%;
   margin-bottom: 100px;
 }
-.end{
+.end {
   color: white;
   margin-top: 200px;
   padding-bottom: 75px;
-  p{
+  p {
     color: white;
   }
-  h1{
+  h1 {
     margin: 0;
     padding: 0;
   }
@@ -111,93 +113,92 @@ p{
   display: flex;
   justify-content: space-between;
 }
-
-button{
-  width:30%;
+.buttonContainer {
+  max-width: 80%;
+  margin: 0 auto;
+}
+button {
+  width: 30%;
   flex-grow: 1;
   margin: 30px;
 }
 
-.break{
-  flex-grow: .5;
-
+.break {
+  flex-grow: 0.5;
 }
 
-.ron{
+.ron {
   width: 100%;
-   min-height: 100%;
-   padding: 20px;
-   border-radius: 20px;
+  min-height: 100%;
+  padding: 20px;
+  border-radius: 20px;
 }
 
 //BUBBLES
-#leftDown{
+#leftDown {
   position: absolute;
   margin-top: 65%;
   height: 250px;
   margin-left: 0px;
 }
 
-#redCir{
+#redCir {
   position: absolute;
   margin-top: 50%;
   height: 150px;
   margin-left: 80%;
 }
 
-#topRight{
+#topRight {
   position: absolute;
   margin-top: 0%;
   width: 100%;
   z-index: -2;
 }
 
-
 // Media Querys
-@media (max-width: 1300px){
-  .ron{
+@media (max-width: 1300px) {
+  .ron {
     background-color: white;
   }
-  .end{
-      margin-top: 100px;
-      padding-bottom: 45px;
+  .end {
+    margin-top: 100px;
+    padding-bottom: 45px;
   }
 }
 
-@media (max-width: 800px){
-  .ron{
+@media (max-width: 800px) {
+  .ron {
     background-color: white;
   }
-  .end{
-      margin-top: 100px;
-      padding-bottom: 45px;
+  .end {
+    margin-top: 100px;
+    padding-bottom: 45px;
   }
-  .bubbles{
+  .bubbles {
     visibility: hidden;
   }
-  .wrapper{
+  .wrapper {
     width: 95%;
     margin: 0 auto;
   }
 }
 
-@media(max-width: 600px){
+@media (max-width: 600px) {
   .buttons {
     display: block;
     background-color: $darkRed;
   }
-  button{
+  button {
     min-width: 200px;
   }
-  h3{
+  h3 {
     background-color: white;
     border-radius: 20px;
     width: 100%;
   }
-  .ron{
+  .ron {
     width: 100%;
     box-sizing: border-box;
   }
-  }
-
-
+}
